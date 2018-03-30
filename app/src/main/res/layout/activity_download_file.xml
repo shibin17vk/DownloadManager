@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#F2F5F8"
+        tools:context="com.testapp.problem1.feature_downloadfile.view.DownloadFileActivity">
+
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#1468b3"
+            android:layout_height="60dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:text="Download"
+                android:layout_margin="14dp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="15dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content">
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:background="#00000000"
+                    android:paddingLeft="10dp"
+                    android:text="https://www.colorado.edu/conflict/peace/download/peace.zip"
+                    android:paddingRight="10dp"
+                    android:id="@+id/edtUrl"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:background="#ccEEEEEE"
+                    android:layout_marginTop="7dp"
+                    android:layout_height="1dp"/>
+
+            <Button
+                    android:id="@+id/btnDonwload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="15dp"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/green_oval_btn"
+                    android:text="Download"
+                    android:textColor="#fff"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="#9B9B9B"
+                    android:id="@+id/txtDownloadStatus"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
